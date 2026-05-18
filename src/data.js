@@ -16,7 +16,7 @@ export const workshops = [
   },
   {
     id: 'w2', num: '02', fascicule: 'FASCICULE 2', name: 'NETWORK ATTACKS', icon: '⚔️',
-    pdf: '/pdfs/workshop1.pdf',
+    pdf: '/pdfs/attacks.pdf',
     desc: 'Offensive security lab: ARP Spoofing (identity hijacking), MITM sniffing with Ettercap, TCP SYN Flood via Metasploit, Smurf DDoS with Scapy, and credential harvesting via Social Engineering Toolkit.',
     tools: [
       { label: 'Ettercap', color: 'red' }, { label: 'Metasploit', color: 'red' },
