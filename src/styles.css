@@ -1,0 +1,39 @@
+:root {
+  --green: #00ff41;
+  --cyan: #00f5ff;
+  --red: #ff003c;
+  --orange: #ff6600;
+  --bg: #000;
+  --card: #060d06;
+  --border: #00ff4133;
+  --text: #c0ffc0;
+  --dim: #5a8a5a;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,65,.015) 2px, rgba(0,255,65,.015) 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes blink    { 0%,100%{opacity:1} 50%{opacity:0} }
+@keyframes fadeUp   { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+@keyframes glitch   { 0%{text-shadow:2px 0 var(--red),-2px 0 var(--cyan)} 50%{text-shadow:-2px 0 var(--red),2px 0 var(--cyan)} 100%{text-shadow:none} }
+@keyframes pulseB   { 0%,100%{border-color:var(--green);box-shadow:0 0 6px var(--green)} 50%{border-color:var(--cyan);box-shadow:0 0 22px var(--cyan)} }
+@keyframes loadBar  { 0%{left:-100%} 100%{left:100%} }
+@keyframes flicker  { 0%,96%,100%{opacity:1} 97%{opacity:.3} 98%{opacity:.9} }
+@keyframes matrix   { to { transform: translateY(100vh); } }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--green); }
