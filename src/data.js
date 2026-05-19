@@ -236,6 +236,15 @@ desc: 'Certification focused on cybersecurity defense fundamentals including thr
     img: "/certs/image.png",
   },
   {
+  id: 'c9',
+  icon: '🛡️',
+  issuer: 'Hack & Fix',
+  name: 'Certified Online Fraud Prevention Specialist (COFPS)',
+  desc: 'Certification recognizing expertise in online fraud prevention, including scam detection, phishing analysis, social engineering awareness, digital risk assessment, and fraud mitigation strategies.',
+  date: 'MAY 19, 2026',
+  img: "/certs/Capture d'écran 2026-05-19 064931.png",
+},
+  {
     id: 'c3', icon: '💻', issuer: '// MICROSOFT / FREECODECAMP',
     name: 'Foundational C# with Microsoft',
     desc: 'Developer Certification covering C# fundamentals, OOP, and .NET ecosystem basics — authorized by Microsoft.',
